@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>慕课网首页</title>
+    <!--<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/muke.css">
+    <script src="JS/mukejs.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+
+</head>
+<body id="body">
+<div class="loading" id="load" style="display: block">
+    <div class="loadimgan"></div>
+</div>
+<div id="container">
+
+    <div id="main-top">
+        <div id="main-top-img" >
+            <a href="#" style="display: block"><img src="images/lunbo1.jpg" alt="show" ></a>
+            <a href="#" style="display: none"><img src="images/lunbo2.jpg" alt="show" ></a>
+            <a href="#" style="display: none" ><img src="images/lunbo3.jpg" alt="show" ></a>
+            <a href="#" style="display: none" ><img src="images/lunbo4.jpg" alt="show" ></a>
+            <a href="#" style="display: none" ><img src="images/lunbo5.jpg" alt="show" ></a>
+            <a href="#" style="display: none" ><img src="images/lunbo6.jpg" alt="show" ></a>
+        </div>
+    </div>
+    <div id="header">
+
+        <!--头部logo-->
+        <div id="logo">
+            <a href="#"><img src="images/logo.png"></a>
+        </div>
+
+        <!--头部标题-->
+        <ul class="top-title">
+            <li><a href="#">免费课程</a> </li>
+            <li><a href="#">职业路径</a> </li>
+            <li><a href="#">实战</a> </li>
+            <li><a href="#">猿记</a> </li>
+            <li><a href="#">手记</a> </li>
+            <li>
+                <a href="#">找工作</a>
+                <span class="new"><img src="images/new.png"></span>
+            </li>
+        </ul>
+
+        <!--头部搜索栏-->
+        <div class="search" id="search">
+            <div id="search-area">
+                <input type="text" id="searcharea">
+            </div>
+            <span class="glyphicon glyphicon-search search-button" id="search-button"></span>
+            <div id="qianduanrumen">
+                <a href="#">前端入门</a>
+                <a href="#">Java基础</a>
+            </div>
+        </div>
+
+
+        <!--顶部右侧-->
+        <div id="top-right">
+            <ul>
+                <li class="xiazai" style="margin-right: 24px;position: relative">
+                    <a href="#" >下载APP</a>
+                    <div id="xiazaihidden">
+                        <img src="images/顶部二维码.png">
+                        <p>扫描下载慕课网APP</p>
+                        <a href="#" class="iosandroid">
+                            <span class="glyphicon glyphicon-apple"style="margin:0 2px 0 15px"></span>
+                            APP Store下载
+                        </a>
+                        <a href="#" class="iosandroid">
+                            <span class="glyphicon glyphicon-piggy-bank"style="margin:0 2px 0 15px"></span>
+                            Android下载
+                        </a>
+                    </div>
+                </li>
+                <li class="gouwuchexiamian" style="margin-right: 31px;position: relative">
+                    <a href="#" id="gouwuche">
+                        <span class="glyphicon glyphicon-shopping-cart" style="font-size: 14px;padding: 0 4px"></span>
+                        <span>购物车</span>
+                    </a>
+                    <div id="gouwuchehidden">
+                        <div class="gouwuchehidden-title">
+                            <h2 style="float: left;font-size: 16px;color: #07111b;margin: 0px 0 ;font-weight: 400">我的购物车</h2>
+                            <h5 style="float: right;font-size: 14px;color: #93999F;margin: 0px 0 ;">已加入0门课程</h5>
+                        </div>
+                        <div class="gouwuchehidden-body">
+                            <span class="glyphicon glyphicon-shopping-cart circlegouwuche"></span>
+                            <h3>购物车里空空无也</h3>
+                            <div style="text-align: center;margin: 24px 0 16px 0;font-size: 12px;line-height: 12px;color: #93999f">快去这里选购你中意的课程</div>
+                            <a href="#">实战课程</a>
+                            <a href="#">职业路径</a>
+                        </div>
+                        <div class="gouwuchehidden-footer">
+                            <div>
+                                <a href="#" style="font-size: 12px;color: #93999f;height: 38px;line-height: 38px;float: left">我的订单中心</a>
+                                <a href="#" style="height: 38px;line-height: 16px;font-size: 13px;color: #FFFFFF;;font-weight: 700;padding: 12px 16px;background: rgba(240,20,20,.8);border-radius: 16px;float: right">去购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="glyphicon glyphicon-bell" id="lingling" style="margin-right: 41px"></li>
+                <li class="touxiangxiamian" style="margin-right: 33px;position: relative">
+                    <a href="#" ><img src="images/头像.jpg" width="40" height="40" id="touxiang"></a>
+                    <div id="touxianghidden">
+                        <div class="touxianghidden-top">
+                            <a href="#" class="touxiang2" style="float: left">
+                                <img src="images/头像.jpg" alt="shop">
+                            </a>
+                            <div class="touxianghidden-top-right">
+                                <a href="#" style="height: 28px;line-height: 28px;">
+                                    <span>往上向下</span>
+                                </a>
+                                <div style="height: 16px;line-height: 16px">
+                                    <a href="#" style="height: 16px;line-height: 16px">经验7,045</a>
+                                    <a href="#" style="height: 16px;line-height: 16px">积分1</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="touxianghidden-center">
+                            <ul>
+                                <li><a href="#"><span class="glyphicon glyphicon-folder-close"></span>我的课程</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>订单中心</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-th-list"></span>积分商城</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-cog"></span>个人设置</a></li>
+                            </ul>
+                        </div>
+                        <div class="touxianghidden-foot">
+                            <a href="#">安全退出</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main-1">
+            <div id="main-1-1">
+                <ul id="Navigation">
+                    <li>
+                        <a href="#">前沿&nbsp;/&nbsp;区块链&nbsp;/&nbsp;人工智能</a>
+                        <span class="glyphicon glyphicon-play"></span>
+
+                        <div class="Navigation-right">
+                            <div class="Navigation-right-top">
+                                <dl>
+                                    <dt>前沿技术</dt>
+                                    <dt class="yi"></dt>
+                                    <dd>微服务</dd>
+                                    <dd>区块链</dd>
+                                    <dd>以太坊</dd>
+                                    <dd>人工智能</dd>
+                                    <dd>机器学期</dd>
+                                    <dd>深度学习</dd>
+                                    <dd>计算机视觉</dd>
+                                    <dd>数据分析&挖掘</dd>
+                                </dl>
+                            </div>
+                            <div class="Navigation-right-bottom">
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon1.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链入门与去中心化应用实战</h3>
+                                            <h2>￥199.00&nbsp;&nbsp;&nbsp;初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>604</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon2.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链技术核心概念与原理讲解</h3>
+                                            <h2>入门&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>26995</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon3.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>基于Python玩转人工只能最火框架TensorFlow应用实践</h3>
+                                            <h2>￥299.00&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon4.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>Python人工智能常用库Numpy使用入门</h3>
+                                            <h2>初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>6514</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">前端&nbsp;/&nbsp;小程序&nbsp;/&nbsp;JS</a>
+                        <span class="glyphicon glyphicon-play"></span>
+                        <div class="Navigation-right">
+                            <div class="Navigation-right-top">
+                                <dl>
+                                    <dt>前端开发</dt>
+                                    <dt class="yi"></dt>
+                                    <dd>微服务</dd>
+                                    <dd>区块链</dd>
+                                    <dd>以太坊</dd>
+                                    <dd>人工智能</dd>
+                                    <dd>机器学期</dd>
+                                    <dd>深度学习</dd>
+                                    <dd>计算机视觉</dd>
+                                    <dd>数据分析&挖掘</dd>
+                                </dl>
+                            </div>
+                            <div class="Navigation-right-bottom">
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon1.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链入门与去中心化应用实战</h3>
+                                            <h2>￥199.00&nbsp;&nbsp;&nbsp;初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>604</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon2.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链技术核心概念与原理讲解</h3>
+                                            <h2>入门&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>26995</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon3.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>基于Python玩转人工只能最火框架TensorFlow应用实践</h3>
+                                            <h2>￥299.00&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon4.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>Python人工智能常用库Numpy使用入门</h3>
+                                            <h2>初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>6514</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">后端&nbsp;/&nbsp;JAVA&nbsp;/&nbsp;Python</a>
+                        <span class="glyphicon glyphicon-play"></span>
+                        <div class="Navigation-right">
+                            <div class="Navigation-right-top">
+                                <dl>
+                                    <dt>后端开发</dt>
+                                    <dt class="yi"></dt>
+                                    <dd>微服务</dd>
+                                    <dd>区块链</dd>
+                                    <dd>以太坊</dd>
+                                    <dd>人工智能</dd>
+                                    <dd>机器学期</dd>
+                                    <dd>深度学习</dd>
+                                    <dd>计算机视觉</dd>
+                                    <dd>数据分析&挖掘</dd>
+                                </dl>
+                            </div>
+                            <div class="Navigation-right-bottom">
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon1.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链入门与去中心化应用实战</h3>
+                                            <h2>￥199.00&nbsp;&nbsp;&nbsp;初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>604</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon2.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链技术核心概念与原理讲解</h3>
+                                            <h2>入门&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>26995</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon3.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>基于Python玩转人工只能最火框架TensorFlow应用实践</h3>
+                                            <h2>￥299.00&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon4.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>Python人工智能常用库Numpy使用入门</h3>
+                                            <h2>初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>6514</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">移动&nbsp;/&nbsp;Android&nbsp;/&nbsp;iOS</a>
+                        <span class="glyphicon glyphicon-play"></span>
+                        <div class="Navigation-right">
+                            <div class="Navigation-right-top">
+                                <dl>
+                                    <dt>移动开发</dt>
+                                    <dt class="yi"></dt>
+                                    <dd>微服务</dd>
+                                    <dd>区块链</dd>
+                                    <dd>以太坊</dd>
+                                    <dd>人工智能</dd>
+                                    <dd>机器学期</dd>
+                                    <dd>深度学习</dd>
+                                    <dd>计算机视觉</dd>
+                                    <dd>数据分析&挖掘</dd>
+                                </dl>
+                            </div>
+                            <div class="Navigation-right-bottom">
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon1.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链入门与去中心化应用实战</h3>
+                                            <h2>￥199.00&nbsp;&nbsp;&nbsp;初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>604</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon2.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链技术核心概念与原理讲解</h3>
+                                            <h2>入门&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>26995</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon3.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>基于Python玩转人工只能最火框架TensorFlow应用实践</h3>
+                                            <h2>￥299.00&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon4.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>Python人工智能常用库Numpy使用入门</h3>
+                                            <h2>初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>6514</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">云计算&nbsp;/&nbsp;大数据&nbsp;/&nbsp;容器</a>
+                        <span class="glyphicon glyphicon-play"></span>
+                        <div class="Navigation-right">
+                            <div class="Navigation-right-top">
+                                <dl>
+                                    <dt>算法&数学</dt>
+                                    <dt class="yi"></dt>
+                                    <dd>微服务</dd>
+                                    <dd>区块链</dd>
+                                    <dd>以太坊</dd>
+                                    <dd>人工智能</dd>
+                                    <dd>机器学期</dd>
+                                    <dd>深度学习</dd>
+                                    <dd>计算机视觉</dd>
+                                    <dd>数据分析&挖掘</dd>
+                                </dl>
+                            </div>
+                            <div class="Navigation-right-bottom">
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon1.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链入门与去中心化应用实战</h3>
+                                            <h2>￥199.00&nbsp;&nbsp;&nbsp;初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>604</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon2.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链技术核心概念与原理讲解</h3>
+                                            <h2>入门&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>26995</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon3.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>基于Python玩转人工只能最火框架TensorFlow应用实践</h3>
+                                            <h2>￥299.00&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon4.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>Python人工智能常用库Numpy使用入门</h3>
+                                            <h2>初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>6514</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">运维&nbsp;/&nbsp;测试&nbsp;/&nbsp;数据库</a>
+                        <span class="glyphicon glyphicon-play"></span>
+                        <div class="Navigation-right">
+                            <div class="Navigation-right-top">
+                                <dl>
+                                    <dt>运维&测试</dt>
+                                    <dt class="yi"></dt>
+                                    <dd>微服务</dd>
+                                    <dd>区块链</dd>
+                                    <dd>以太坊</dd>
+                                    <dd>人工智能</dd>
+                                    <dd>机器学期</dd>
+                                    <dd>深度学习</dd>
+                                    <dd>计算机视觉</dd>
+                                    <dd>数据分析&挖掘</dd>
+                                </dl>
+                            </div>
+                            <div class="Navigation-right-bottom">
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon1.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链入门与去中心化应用实战</h3>
+                                            <h2>￥199.00&nbsp;&nbsp;&nbsp;初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>604</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon2.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链技术核心概念与原理讲解</h3>
+                                            <h2>入门&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>26995</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon3.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>基于Python玩转人工只能最火框架TensorFlow应用实践</h3>
+                                            <h2>￥299.00&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon4.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>Python人工智能常用库Numpy使用入门</h3>
+                                            <h2>初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>6514</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">UI设计&nbsp;/&nbsp;3D动画&nbsp;/&nbsp;游戏</a>
+                        <span class="glyphicon glyphicon-play"></span>
+                        <div class="Navigation-right">
+                            <div class="Navigation-right-top">
+                                <dl>
+                                    <dt>UI设计</dt>
+                                    <dt class="yi"></dt>
+                                    <dd>微服务</dd>
+                                    <dd>区块链</dd>
+                                    <dd>以太坊</dd>
+                                    <dd>人工智能</dd>
+                                    <dd>机器学期</dd>
+                                    <dd>深度学习</dd>
+                                    <dd>计算机视觉</dd>
+                                    <dd>数据分析&挖掘</dd>
+                                </dl>
+                            </div>
+                            <div class="Navigation-right-bottom">
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon1.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链入门与去中心化应用实战</h3>
+                                            <h2>￥199.00&nbsp;&nbsp;&nbsp;初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>604</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon2.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>区块链技术核心概念与原理讲解</h3>
+                                            <h2>入门&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>26995</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon3.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>基于Python玩转人工只能最火框架TensorFlow应用实践</h3>
+                                            <h2>￥299.00&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="Navigation-right-bottom-icon">
+                                    <a href="#">
+                                        <img src="images/Navigation-right-bottom-icon4.jpg">
+                                        <div style="margin-left: 16px;float: left">
+                                            <h3>Python人工智能常用库Numpy使用入门</h3>
+                                            <h2>初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>6514</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div id="lunbo">
+                <div id="lunbo-top">
+                    <div id="lunbo-img" style="transition: all .9s">
+                        <a href="#" style="display: block;transition: all .9s;"><img src="images/lunbo1.jpg" alt="show" ></a>
+                        <a href="#" style="display: none;transition: all .9s"><img    src="images/lunbo2.jpg" alt="show" ></a>
+                        <a href="#" style="display: none;transition: all .9s"><img    src="images/lunbo3.jpg" alt="show"  width="936px" height="316px"></a>
+                        <a href="#" style="display: none;transition: all .9s"><img    src="images/lunbo4.jpg" alt="show" ></a>
+                        <a href="#" style="display: none;transition: all .9s"><img    src="images/lunbo5.jpg" alt="show" ></a>
+                        <a href="#" style="display: none;transition: all .9s"><img    src="images/lunbo6.jpg" alt="show" ></a>
+                    </div>
+                        <a href="#" id="pre" class="glyphicon glyphicon-menu-left"></a>
+                        <a href="#" id="nex" class="glyphicon glyphicon-menu-right"></a>
+                        <div class="lunbo-dots" id="lunbo-dots">
+                        <span class="active"></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                    </div>
+                </div>
+                <div id="lunbo-foot">
+                    <a href="#">
+                        <i style="background-position:center 0"></i>
+                        <p class="tit">Web前端攻城狮</p>
+                        <p class="tit2">互联网时代最火爆的技术</p>
+                    </a>
+                    <a href="#">
+                        <i style="background-position:center -72px"></i>
+                        <p class="tit">Java攻城狮</p>
+                        <p class="tit2">综合就业排名第一</p>
+                    </a>
+                    <a href="#">
+                        <i style="background-position:center -108px"></i>
+                        <p class="tit">Android攻城狮</p>
+                        <p class="tit2">移动设备市场份额第一</p>
+                    </a>
+                    <a href="#">
+                        <i style="background-position:center -36px"></i>
+                        <p class="tit">PHP攻城狮</p>
+                        <p class="tit2">世界上最好的语言</p>
+                    </a>
+                    <a href="#">
+                        <i style="background-position:center -144px"></i>
+                        <p class="tit">iOS攻城狮</p>
+                        <p class="tit2">可能是全球最好用的系统</p>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="main-1-2">
+                <div class="main-1-2-container">
+                    <img src="images/实战推荐.png" style="margin-top: 10px">
+                    <div class="main-1-2-container-content">
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/实战1.jpg">
+                                    <label>Go</label>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Google资深工程师深度讲解Go语言</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥399.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/实战2.jpg">
+                                    <label>Vue.js</label>
+                                    <div class="hot">HOT</div>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Vue2.5开发去哪儿网APP从零基础入门到实战项目</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>3011<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥266.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/实战3.jpg">
+                                    <label>Go</label>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Spring Cloud微服务实战</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;高级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1840<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥366.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/实战4.jpg">
+                                    <label>Go</label>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>全网最热Python3入门+进阶 更快上手实际开发</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>5646<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥399.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/实战5.jpg">
+                                    <label>SpringBoot</label>
+                                    <div class="hot">HOT</div>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Google资深工程师深度讲解Go语言</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥399.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-2" >
+            <div class="main-1-2" style="background: #F8FAFC!important;box-shadow: 0 0 0 0;">
+                <div class="main-1-2-container">
+                    <img src="images/新上好课.png" style="margin-top: 10px">
+                    <div class="main-1-2-container-content">
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/xin1.jpg">
+                                    <label>Go</label>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Google资深工程师深度讲解Go语言</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥399.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/xin2.jpg">
+                                    <label>Vue.js</label>
+                                    <div class="hot">HOT</div>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Vue2.5开发去哪儿网APP从零基础入门到实战项目</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>3011<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥266.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/xin3.jpg">
+                                    <label>Go</label>
+                                    <div class="hot" style="background: #FF6C00;">NEW</div>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Spring Cloud微服务实战</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;高级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1840<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥366.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/xin4.jpg">
+                                    <label>Go</label>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>全网最热Python3入门+进阶 更快上手实际开发</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>5646<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥399.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/xin5.jpg">
+                                    <label>SpringBoot</label>
+                                    <div class="hot">HOT</div>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Google资深工程师深度讲解Go语言</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥399.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/xin6.jpg">
+                                    <label>Go</label>
+                                    <div class="hot" style="background: #FF6C00;">NEW</div>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Google资深工程师深度讲解Go语言</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥399.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/xin7.jpg">
+                                    <label>Vue.js</label>
+                                    <div class="hot">HOT</div>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Vue2.5开发去哪儿网APP从零基础入门到实战项目</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>3011<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥266.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/xin8.jpg">
+                                    <label>Go</label>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Spring Cloud微服务实战</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;高级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1840<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥366.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/xin9.jpg">
+                                    <label>Go</label>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>全网最热Python3入门+进阶 更快上手实际开发</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;初级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>5646<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥399.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-1-2-container-content-card">
+                            <a>
+                                <div class="hashadow" style="position: relative">
+                                    <img src="images/xin10.jpg">
+                                    <label>SpringBoot</label>
+                                    <div class="hot" style="background: #FF6C00;">NEW</div>
+                                </div>
+                                <div style="padding: 12px 8px;color: #1c1f21">
+                                    <h3>Google资深工程师深度讲解Go语言</h3>
+                                    <h2>实战&nbsp;&nbsp;&nbsp;中级&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-user"></i>1316<span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span></h2>
+                                    <p>￥399.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-3">
+            <div class="main-3-container">
+                <img src="images/新手入门.png" style="margin-top: 10px">
+                <div class="main-3-container-list">
+                    <div class="main-3-container-list-title main-3-container-list-title1">
+                        <a href="#">
+                            <h3 class="ellipsis">打开Spring Boot学习的最佳方式</h3>
+                            <p class="ellipsis">直击Spring Boot框架核心，颠覆Java企业应用开发</p>
+                        </a>
+                    </div>
+                    <div class="main-3-container-list-title main-3-container-list-title2">
+                        <a href="#">
+                            <h3 class="ellipsis">Java开发零基础入门到精通</h3>
+                            <p class="ellipsis">Java学习路线规划齐全，就等你来学了</p>
+                        </a>
+                    </div>
+                    <div class="course-card">
+                        <a href="#">
+                            <div class="course-card-top">
+                                <div class="course-card-banner">
+                                    <div class="img-up" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);">
+                                        <label>Web前端攻城狮培养计划</label>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content" style="text-align: left">
+                                <h3 style="margin: 0">前端小白入门系列课程</h3>
+                                <div>
+                                    <div style="font-size: 12px;color: #93999f;line-height: 24px;margin-top: 8px;font-weight: 400;">
+                                        <span style="margin-right: 12px">职业路径</span>
+                                        <span style="margin-right: 12px">5步/33课</span>
+                                        <span>
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            5796
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 12px;color: #4D555D;line-height: 20px;">￥568.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="course-card">
+                        <a href="#">
+                            <div class="course-card-top">
+                                <div class="course-card-banner">
+                                    <div class="img-up" style="background-image: url(//climg.mukewang.com/58c7b92d0001608406000338.jpg);">
+                                        <label>JAVA攻城狮培养计划</label>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(//climg.mukewang.com/58c7b92d0001608406000338.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(//climg.mukewang.com/58c7b92d0001608406000338.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content" style="text-align: left">
+                                <h3 style="margin: 0">Java零基础入门</h3>
+                                <div>
+                                    <div style="font-size: 12px;color: #93999f;line-height: 24px;margin-top: 8px;font-weight: 400;">
+                                        <span style="margin-right: 12px">职业路径</span>
+                                        <span style="margin-right: 12px">5步/33课</span>
+                                        <span>
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            5796
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 12px;color: #4D555D;line-height: 20px;">￥568.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="course-card">
+                        <a href="#">
+                            <div class="course-card-top">
+                                <div class="course-card-banner">
+                                    <div class="img-up" style="background-image: url(//climg.mukewang.com/585243df00014f2406000338.jpg);">
+                                        <label>Android攻城狮培养计划</label>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(//climg.mukewang.com/585243df00014f2406000338.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(//climg.mukewang.com/585243df00014f2406000338.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content" style="text-align: left;">
+                                <h3 style="margin: 0">零基础入门Android语法与界面</h3>
+                                <div>
+                                    <div style="font-size: 12px;color: #93999f;line-height: 24px;margin-top: 8px;font-weight: 400;">
+                                        <span style="margin-right: 12px">职业路径</span>
+                                        <span style="margin-right: 12px">5步/33课</span>
+                                        <span>
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            5796
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 12px;color: #4D555D;line-height: 20px;">￥568.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="course-card">
+                        <a href="#">
+                            <div class="course-card-top">
+                                <div class="course-card-banner">
+                                    <div class="img-up" style="background-image: url(//climg.mukewang.com/5acd69bb000103d706000338.jpg);">
+                                        <label>Web前端攻城狮培养计划</label>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(//climg.mukewang.com/5acd69bb000103d706000338.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(//climg.mukewang.com/5acd69bb000103d706000338.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content" style="text-align: left">
+                                <h3 style="margin: 0">Java Web强化：SSM框架整合</h3>
+                                <div>
+                                    <div style="font-size: 12px;color: #93999f;line-height: 24px;margin-top: 8px;font-weight: 400;">
+                                        <span style="margin-right: 12px">职业路径</span>
+                                        <span style="margin-right: 12px">5步/33课</span>
+                                        <span>
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            5796
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 12px;color: #4D555D;line-height: 20px;">￥568.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="course-card">
+                        <a href="#">
+                            <div class="course-card-top">
+                                <div class="course-card-banner">
+                                    <div class="img-up" style="background-image: url(//climg.mukewang.com/58d1f2dc0001eedf06000338.jpg);">
+                                        <label>Web前端攻城狮培养计划</label>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(//climg.mukewang.com/58d1f2dc0001eedf06000338.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(//climg.mukewang.com/58d1f2dc0001eedf06000338.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content" style="text-align: left">
+                                <h3 style="margin: 0">毕设利器 SSM到Spring Boot 从零开发校园商铺平台aaaaaaaaa</h3>
+                                <div>
+                                    <div style="font-size: 12px;color: #93999f;line-height: 24px;margin-top: 8px;font-weight: 400;">
+                                        <span style="margin-right: 12px">职业路径</span>
+                                        <span style="margin-right: 12px">5步/33课</span>
+                                        <span>
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            5796
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 12px;color: #4D555D;line-height: 20px;">￥568.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="course-card">
+                        <a href="#">
+                            <div class="course-card-top">
+                                <div class="course-card-banner">
+                                    <div class="img-up" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);">
+                                        <label>Web前端攻城狮培养计划</label>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content" style="text-align: left">
+                                <h3 style="margin: 0">前端小白入门系列课程</h3>
+                                <div>
+                                    <div style="font-size: 12px;color: #93999f;line-height: 24px;margin-top: 8px;font-weight: 400;">
+                                        <span style="margin-right: 12px">职业路径</span>
+                                        <span style="margin-right: 12px">5步/33课</span>
+                                        <span>
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            5796
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 12px;color: #4D555D;line-height: 20px;">￥568.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="course-card">
+                        <a href="#">
+                            <div class="course-card-top">
+                                <div class="course-card-banner">
+                                    <div class="img-up" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);">
+                                        <label>Web前端攻城狮培养计划</label>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content" style="text-align: left">
+                                <h3 style="margin: 0">前端小白入门系列课程</h3>
+                                <div>
+                                    <div style="font-size: 12px;color: #93999f;line-height: 24px;margin-top: 8px;font-weight: 400;">
+                                        <span style="margin-right: 12px">职业路径</span>
+                                        <span style="margin-right: 12px">5步/33课</span>
+                                        <span>
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            5796
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 12px;color: #4D555D;line-height: 20px;">￥568.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="course-card">
+                        <a href="#">
+                            <div class="course-card-top">
+                                <div class="course-card-banner">
+                                    <div class="img-up" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);">
+                                        <label>Web前端攻城狮培养计划</label>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content" style="text-align: left">
+                                <h3 style="margin: 0">前端小白入门系列课程</h3>
+                                <div>
+                                    <div style="font-size: 12px;color: #93999f;line-height: 24px;margin-top: 8px;font-weight: 400;">
+                                        <span style="margin-right: 12px">职业路径</span>
+                                        <span style="margin-right: 12px">5步/33课</span>
+                                        <span>
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            5796
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 12px;color: #4D555D;line-height: 20px;">￥568.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="course-card">
+                        <a href="#">
+                            <div class="course-card-top">
+                                <div class="course-card-banner">
+                                    <div class="img-up" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);">
+                                        <label>Web前端攻城狮培养计划</label>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content" style="text-align: left">
+                                <h3 style="margin: 0">前端小白入门系列课程</h3>
+                                <div>
+                                    <div style="font-size: 12px;color: #93999f;line-height: 24px;margin-top: 8px;font-weight: 400;">
+                                        <span style="margin-right: 12px">职业路径</span>
+                                        <span style="margin-right: 12px">5步/33课</span>
+                                        <span>
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            5796
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 12px;color: #4D555D;line-height: 20px;">￥568.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="course-card">
+                        <a href="#">
+                            <div class="course-card-top">
+                                <div class="course-card-banner">
+                                    <div class="img-up" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);">
+                                        <label>Web前端攻城狮培养计划</label>
+                                    </div>
+                                    <div class="img-mid" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                    <div class="img-down" style="background-image: url(//climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="course-card-content" style="text-align: left">
+                                <h3 style="margin: 0">前端小白入门系列课程</h3>
+                                <div>
+                                    <div style="font-size: 12px;color: #93999f;line-height: 24px;margin-top: 8px;font-weight: 400;">
+                                        <span style="margin-right: 12px">职业路径</span>
+                                        <span style="margin-right: 12px">5步/33课</span>
+                                        <span>
+                                            <i class="glyphicon glyphicon-user"></i>
+                                            5796
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 12px;color: #4D555D;line-height: 20px;">￥568.00</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-4">
+            <div id="main-4-container">
+                <img src="images/精彩手记.png" style="display:block;margin: 0 auto">
+                <dl id="main-4-container-dl">
+                    <dd class="item" >
+                        <label style="display: inline-block;font-size: 12px;color: #FFFFFF;line-height: 24px;background: rgba(0,180,60,.5);border-radius: 12px;padding: 0 12px;margin-bottom: 8px">热门话题</label>
+                        <div style="display:block">
+                            <a href="javascript:" style="font-size: 16px;display:block;color: rgba(0,180,60,.8);line-height: 24px;width: 224px;transition: all .3s;text-decoration: none;float: left">
+                                #【内推第2波】#<br>
+                                打工奋斗7万落京户VS自主创业牧马城市，如何抉择？
+                            </a>
+                            <img src="images/手记1.jpg" style="width: 72px;height: 72px;border-radius: 8px;float:right;background: #f3f5f7;">
+                        </div>
+                        <p style="font-weight: 400;font-size: 12px;color: #4D555D;line-height: 24px;margin-top: 12px;float: left">
+                            毕业求职？跳槽加薪？纠结滋润加班还是苦练x年自主创业？速速提问互撩，你在撩的极有可能就是你的Boss！激不激动？惊不惊喜？Offer已在这里！你的简历在哪里？Scott老师邮箱：wolf18387@qq.comJeson老师邮箱：jeson@imoocc.com
+                        </p>
+                        <div class="liaojiexiangqing">
+                            <a href="javascript:">了解详情<i class="glyphicon glyphicon-arrow-right"></i></a>
+                        </div>
+                        <div class="tit-line">
+                            <span>往期回顾</span>
+                        </div>
+                        <div style="float: left">
+                            <div style="float: left;margin-bottom: 15px">
+                                <a href="javascript:" style="font-size: 14px;display:block;color:#4D555D;line-height: 24px;width: 224px;transition: all .3s;text-decoration: none;float: left">
+                                    #【获奖名单戳查看更多】#<br>
+                                    当我们谈论Java时，我们都谈些什么？
+                                </a>
+                                <img src="//img.mukewang.com/5abaf07b00016b7005120512.jpg" style="width: 72px;height: 72px;border-radius: 8px;float:right;background: #f3f5f7;">
+                            </div>
+                            <div style="float: left;margin-bottom: 15px">
+                                <a href="javascript:" style="font-size: 14px;display:block;color:#4D555D;line-height: 24px;width: 224px;transition: all .3s;text-decoration: none;float: left">
+                                    #【内推第1波】#<br>
+                                    直击BAT面试机会！行业大佬在线答疑
+                                </a>
+                                <img src="//img.mukewang.com/5aaf11ae0001d26c05120512.jpg" style="width: 72px;height: 72px;border-radius: 8px;float:right;background: #f3f5f7;">
+                            </div>
+                            <div style="float: left">
+                                <a href="javascript:" style="font-size: 14px;display:block;color:#4D555D;line-height: 24px;width: 224px;transition: all .3s;text-decoration: none;float: left">
+                                    #【花式填坑】第23期#<br>
+                                    运维进化篇：成为Python DevOps工程师有哪些必备条件？
+                                </a>
+                                <img src="//img.mukewang.com/5a5d55de00015cba05120512.jpg" style="width: 72px;height: 72px;border-radius: 8px;float:right;background: #f3f5f7;">
+                            </div>
+                        </div>
+                        <div class="liaojiexiangqing">
+                            <a href="javascript:">更多往期话题<i class="glyphicon glyphicon-arrow-right"></i></a>
+                        </div>
+                    </dd>
+
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,140,200,.6)">
+                            <i class="glyphicon glyphicon-book"></i>
+                            手机文章
+                        </label>
+                        <div>
+                            <a href="javascript:" style="width: 224px;display: block;font-size: 16px;color: #07111b;line-height: 24px;transition: all .3s;text-decoration: none;float: left">Dubbo手记 - 理解Dubbo的调用流程与Dubbo多协议解析</a>
+                            <img src="//img.mukewang.com/5b18c8560001c49d01360136-210-130.jpg" style="width: 72px;height: 48px;float: right">
+                        </div>
+                        <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify;word-break: break-all;font-weight: 400;float: left;margin-top: 8px">Dubbo作为目前国内主流的微服务框架之一，可谓是耳熟能详了。 今天的主题就是希望可以与大家分享讨论关于Dubbo的服务调用流程，以及Dubbo的协议之间的关系与区别。 一、Dubbo的调用流程分析 Dubbo本身主要支持两种调用流程，包括直连提供者和基于注册中心的调用。这两种哪种重要肯定不需要我再声明了 o(￣︶￣)o ，我们一定是基于注册中心的使用方式了， 不过大家是否真的理解基于注册中心的使...</p>
+                        <div style="width:100%;float: left;font-size: 12px;color: #93999f;line-height: 24px;margin-top: 12px;font-weight: 400;background-size: cover">
+                            <span style="margin-right:24px;float: left ">浏览 891</span>
+                            <span style="margin-right:24px;float: left ">推荐 10</span>
+                            <a href="javascript:" class="yueduquanen">
+                                阅读全文
+                                <i class="glyphicon glyphicon-arrow-right"></i>
+                            </a>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,140,200,.6)">
+                            <i class="glyphicon glyphicon-book"></i>
+                            手机文章
+                        </label>
+                        <div>
+                            <a href="javascript:" style="width: 224px;display: block;font-size: 16px;color: #07111b;line-height: 24px;transition: all .3s;text-decoration: none;float: left">高并发场景下转移表的处理过程探讨</a>
+                            <img src="//img.mukewang.com/5b18c89f0001512f01360136-210-130.jpg" style="width: 72px;height: 48px;float: right">
+                        </div>
+                        <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify;word-break: break-all;font-weight: 400;float: left;margin-top: 8px">前提 技术调整，现在需要将表A从数据库B转移到数据库C里，成为新表D。 这篇文章主要是分享一下我们的方案 详细方案 调研（通过监控等，多个系统有使用）整理出所有涉及表A的SQL 新库上创建新表 在原有相关方法上添加开关，允许： 1）更新操作-同时更新（包括写）表A和表D 2）更新操作-只更新（包括写）表A 3）更新操作-只更新（包括写）表D 4）查询操作-单独查表A 5）查询操作-单独查表D 6）...</p>
+                        <div style="width:100%;float: left;font-size: 12px;color: #93999f;line-height: 24px;margin-top: 12px;font-weight: 400;background-size: cover">
+                            <span style="margin-right:24px;float: left ">浏览 891</span>
+                            <span style="margin-right:24px;float: left ">推荐 10</span>
+                            <a href="javascript:" class="yueduquanen">
+                                阅读全文
+                                <i class="glyphicon glyphicon-arrow-right"></i>
+                            </a>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,140,200,.6)">
+                            <i class="glyphicon glyphicon-book"></i>
+                            手机文章
+                        </label>
+                        <div>
+                            <a href="javascript:" style="width: 224px;display: block;font-size: 16px;color: #07111b;line-height: 24px;transition: all .3s;text-decoration: none;float: left">【前端干货整理】金九银十，offer拿到手软的秘密都在这里了……</a>
+                            <img src="//img.mukewang.com/5b98dbd30001f77403000300-210-130.jpg" style="width: 72px;height: 48px;float: right">
+                        </div>
+                        <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify;word-break: break-all;font-weight: 400;float: left;margin-top: 8px">金九银十，求职面试季，你是否存在以下困惑或者问题：明明技术不错，却因不懂如何写简历，而与心仪公司错过……事前准备不够充分，面对面试官问到的面试题，时常懵逼……培训出身，该如何提高面试成功率，进入心仪公司呢……想转行却不知道该怎么做、到底该不该去外包公司……收到几家offer,却不知道给如何抉择……哪怕你中了其中一条，那么本文，就值得你认真阅读，相信本文会对你有所帮助……如果你中了其中两条或者更多，...</p>
+                        <div style="width:100%;float: left;font-size: 12px;color: #93999f;line-height: 24px;margin-top: 12px;font-weight: 400;background-size: cover">
+                            <span style="margin-right:24px;float: left ">浏览 891</span>
+                            <span style="margin-right:24px;float: left ">推荐 10</span>
+                            <a href="javascript:" class="yueduquanen">
+                                阅读全文
+                                <i class="glyphicon glyphicon-arrow-right"></i>
+                            </a>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,140,200,.6)">
+                            <i class="glyphicon glyphicon-book"></i>
+                            手机文章
+                        </label>
+                        <div>
+                            <a href="javascript:" style="width: 224px;display: block;font-size: 16px;color: #07111b;line-height: 24px;transition: all .3s;text-decoration: none;float: left">Python网络爬虫实战：根据天猫胸罩销售数据分析中国女性胸部大小分布</a>
+                            <img src="//img.mukewang.com/5b95f02c0001b46c04160595-210-130.jpg" style="width: 72px;height: 48px;float: right">
+                        </div>
+                        <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify;word-break: break-all;font-weight: 400;float: left;margin-top: 8px">本文实现一个非常有趣的项目，这个项目是关于胸罩销售数据分析的。是网络爬虫和数据分析的综合应用项目。本项目会从天猫抓取胸罩销售数据，并将这些数据保存到SQLite数据库中，然后对数据进行清洗，最后通过SQL语句、Pandas和Matplotlib对数据进行数据可视化分析。我们从分析结果中可以得出很多有的结果，例如，中国女性胸部标准尺寸是多少；胸罩上胸围的销售比例；哪个颜色的胸罩最受女性欢迎。 1. ...</p>
+                        <div style="width:100%;float: left;font-size: 12px;color: #93999f;line-height: 24px;margin-top: 12px;font-weight: 400;background-size: cover">
+                            <span style="margin-right:24px;float: left ">浏览 891</span>
+                            <span style="margin-right:24px;float: left ">推荐 10</span>
+                            <a href="javascript:" class="yueduquanen">
+                                阅读全文
+                                <i class="glyphicon glyphicon-arrow-right"></i>
+                            </a>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,140,200,.6)">
+                            <i class="glyphicon glyphicon-book"></i>
+                            手机文章
+                        </label>
+                        <div>
+                            <a href="javascript:" style="width: 224px;display: block;font-size: 16px;color: #07111b;line-height: 24px;transition: all .3s;text-decoration: none;float: left">可能是全网把 ZooKeeper 概念讲的最清楚的一篇文章</a>
+                            <img src="//img.mukewang.com/5b9733190001d28406000400-210-130.jpg" style="width: 72px;height: 48px;float: right">
+                        </div>
+                        <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify;word-break: break-all;font-weight: 400;float: left;margin-top: 8px">该文已加入开源文档：JavaGuide（一份涵盖大部分Java程序员所需要掌握的核心知识）。地址:https://github.com/Snailclimb/JavaGuide. 前言 相信大家对 ZooKeeper 应该不算陌生。但是你真的了解 ZooKeeper 是个什么东西吗？如果别人/面试官让你给他讲讲 ZooKeeper 是个什么东西，你能回答到什么地步呢？ 我本人曾经使用过 ZooKe...</p>
+                        <div style="width:100%;float: left;font-size: 12px;color: #93999f;line-height: 24px;margin-top: 12px;font-weight: 400;background-size: cover">
+                            <span style="margin-right:24px;float: left ">浏览 891</span>
+                            <span style="margin-right:24px;float: left ">推荐 10</span>
+                            <a href="javascript:" class="yueduquanen">
+                                阅读全文
+                                <i class="glyphicon glyphicon-arrow-right"></i>
+                            </a>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,140,200,.6)">
+                            <i class="glyphicon glyphicon-book"></i>
+                            手机文章
+                        </label>
+                        <div>
+                            <a href="javascript:" style="width: 224px;display: block;font-size: 16px;color: #07111b;line-height: 24px;transition: all .3s;text-decoration: none;float: left">CSS绘制三角形和箭头，不用再用图片了</a>
+                            <img src="//img.mukewang.com/5b97350e0001082910000562-210-130.jpg" style="width: 72px;height: 48px;float: right">
+                        </div>
+                        <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify;word-break: break-all;font-weight: 400;float: left;margin-top: 8px">前言 还在用图片制作箭头，三角形，那就太lou了。css可以轻松搞定这一切，而且颜色大小想怎么变就怎么变，还不用担心失真等问题。 先来看看这段代码: /**css*/ .d1{ width: 0; height: 0; border: 100px solid #339933; } /**html*/ /**c...</p>
+                        <div style="width:100%;float: left;font-size: 12px;color: #93999f;line-height: 24px;margin-top: 12px;font-weight: 400;background-size: cover">
+                            <span style="margin-right:24px;float: left ">浏览 891</span>
+                            <span style="margin-right:24px;float: left ">推荐 10</span>
+                            <a href="javascript:" class="yueduquanen">
+                                阅读全文
+                                <i class="glyphicon glyphicon-arrow-right"></i>
+                            </a>
+                        </div>
+                    </dd>
+
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,180,60,.6);">
+                            <i class="glyphicon glyphicon-question-sign"></i>
+                            相关猿问
+                        </label>
+                        <a href="javascrpt:" style="display: block;color: #1c1f21;text-decoration: none">git ，push上去，pull不下来？</a>
+                        <div>
+                            <p style="font-size: 12px;color: #07111b;line-height: 24px;display:inline-block;margin:0;margin-top: 8px;">最赞回答</p>
+                            <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify">这句英文已经解释了，当前分支有未提交的代码，需要解决才能pull</p>
+                            <div>
+                                <a href="javascript:" style="color: rgba(0,180,60,.6);float: right;text-decoration: none;font-size: 12px">
+                                    共16个回答
+                                    <i class="glyphicon glyphicon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,180,60,.6);">
+                            <i class="glyphicon glyphicon-question-sign"></i>
+                            相关猿问
+                        </label>
+                        <a href="javascrpt:" style="display: block;color: #1c1f21;text-decoration: none">react 获取this.props.children 的对象实例</a>
+                        <div>
+                            <p style="font-size: 12px;color: #07111b;line-height: 24px;display:inline-block;margin:0;margin-top: 8px;">最赞回答</p>
+                            <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify">这个是做什么的呢？，我好像在做测试哦</p>
+                            <div>
+                                <a href="javascript:" style="color: rgba(0,180,60,.6);float: right;text-decoration: none;font-size: 12px">
+                                    共16个回答
+                                    <i class="glyphicon glyphicon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,180,60,.6);">
+                            <i class="glyphicon glyphicon-question-sign"></i>
+                            相关猿问
+                        </label>
+                        <a href="javascrpt:" style="display: block;color: #1c1f21;text-decoration: none">(*it).empty(); 编译器在这里报错，是怎么错了？</a>
+                        <div>
+                            <p style="font-size: 12px;color: #07111b;line-height: 24px;display:inline-block;margin:0;margin-top: 8px;">最赞回答</p>
+                            <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify">(*it).empty肯定会报错，it解引用之后是int数据，你这就相当于调用一个int对象的empty()方法，肯定报错</p>
+                            <div>
+                                <a href="javascript:" style="color: rgba(0,180,60,.6);float: right;text-decoration: none;font-size: 12px">
+                                    共16个回答
+                                    <i class="glyphicon glyphicon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,180,60,.6);">
+                            <i class="glyphicon glyphicon-question-sign"></i>
+                            相关猿问
+                        </label>
+                        <a href="javascrpt:" style="display: block;color: #1c1f21;text-decoration: none">【有奖问答】与大咖交流前端JS与框架开发，免费赢取前端图书（11.28-12.4）</a>
+                        <div>
+                            <p style="font-size: 12px;color: #07111b;line-height: 24px;display:inline-block;margin:0;margin-top: 8px;">最赞回答</p>
+                            <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify">我觉得不管学习哪门语言，到后面总还是要学习一下规范，程序员的素养必不可少啊！！</p>
+                            <div>
+                                <a href="javascript:" style="color: rgba(0,180,60,.6);float: right;text-decoration: none;font-size: 12px">
+                                    共16个回答
+                                    <i class="glyphicon glyphicon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,180,60,.6);">
+                            <i class="glyphicon glyphicon-question-sign"></i>
+                            相关猿问
+                        </label>
+                        <a href="javascrpt:" style="display: block;color: #1c1f21;text-decoration: none">各位猿或者媛，一般几点睡啊。有时忍住头痛看java到很晚，第二天就头痛一整天</a>
+                        <div>
+                            <p style="font-size: 12px;color: #07111b;line-height: 24px;display:inline-block;margin:0;margin-top: 8px;">最赞回答</p>
+                            <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify">没有什么事情是需要熬夜完成的</p>
+                            <div>
+                                <a href="javascript:" style="color: rgba(0,180,60,.6);float: right;text-decoration: none;font-size: 12px">
+                                    共16个回答
+                                    <i class="glyphicon glyphicon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="item">
+                        <label style="line-height: 16px;margin-bottom: 8px;display: inline-block;font-size: 12px;color: rgba(0,180,60,.6);">
+                            <i class="glyphicon glyphicon-question-sign"></i>
+                            相关猿问
+                        </label>
+                        <a href="javascrpt:" style="display: block;color: #1c1f21;text-decoration: none">java好学吗.??pp</a>
+                        <div>
+                            <p style="font-size: 12px;color: #07111b;line-height: 24px;display:inline-block;margin:0;margin-top: 8px;">最赞回答</p>
+                            <p style="font-size: 12px;color: #4D555D;line-height: 24px;text-align: justify">挺好的！</p>
+                            <div>
+                                <a href="javascript:" style="color: rgba(0,180,60,.6);float: right;text-decoration: none;font-size: 12px">
+                                    共16个回答
+                                    <i class="glyphicon glyphicon-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div id="main-5">
+            <div id="main-5-container">
+                <div>
+                <img src="images/名师.png" style="display: block;margin-left: 358px;margin-top: 10px">
+                    <a href="javascript:" class="chakangengduo">查看更多<span style="margin-left: 5px">&gt;</span></a>
+                    <div class="main-5-container-main">
+                        <div class="main-5-container-main-list" id="main-5-container-main-list" style=" left: -1182px;">
+                            <div class="main-5-container-main-list1">
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img.mukewang.com/5afe3d350001596a02430243-100-100.jpg">
+                                    <span class="titlee">神思者l</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title=" 曾就职于IBM，中软国际等大型互联网公司，参与主持了Nebula云平台，Peony分布式前端渲染平台，Taims医疗云，Jobseeker人才库等大型系统的开发，多次担任教育部大学生互联网 创新创业大赛导师与评委。">
+                                        曾就职于IBM，中软国际等大型互联网公司，参与主持了Nebula云平台，Peony分布式前端渲染平台，Taims医疗云，Jobseeker人才库等大型系统的开发，多次担任教育部大学生互联网 创新创业大赛导师与评委。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5b614d33000131ac03000331-100-100.jpg">
+                                    <span class="titlee">阿神_</span>
+                                    <span class="kong">JAVA开发工程师</span>
+                                    <span class="textt" title="10余年JAVA架构设计与研发经验。目前就职于国内知名O2O互联网公司，从事基础架构设计研发工作。擅长系统架构，应用架构和基础组件架构设计，对高并发、高可用、分布式系统设计有着丰富的经验和实战，精通互联网Java主流技术。">
+                                      10余年JAVA架构设计与研发经验。目前就职于国内知名O2O互联网公司，从事基础架构设计研发工作。擅长系统架构，应用架构和基础组件架构设计，对高并发、高可用、分布式系统设计有着丰富的经验和实战，精通互联网Java主流技术。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5b7b59070001fdc909600960-100-100.jpg">
+                                    <span class="titlee">Wotchin</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title="先后任职于某海外业务移动互联网公司，国内某一线IT大厂研发能力中心，从事AI全栈研发，数据库内核、数据仓库、数据分析等数据科学方面的研发工作">
+                                    先后任职于某海外业务移动互联网公司，国内某一线IT大厂研发能力中心，从事AI全栈研发，数据库内核、数据仓库、数据分析等数据科学方面的研发工作
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5b0e022600017b5c06000600-100-100.jpg">
+                                    <span class="titlee">浩然老师</span>
+                                    <span class="kong"></span>
+                                    <span class="textt" title="艺术与商业结合的矛盾体设计师，现为自由设计师，曾服务捷越联合、东站西子国际、信安亚双十一视觉等互联网以及品牌设计公司。">
+                                   艺术与商业结合的矛盾体设计师，现为自由设计师，曾服务捷越联合、东站西子国际、信安亚双十一视觉等互联网以及品牌设计公司。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item" style="margin-right: 0">
+                                    <img src="//img3.mukewang.com/5aa0d97c00014aae02000200-100-100.jpg">
+                                    <span class="titlee">雷宇_</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title="从事软件研发工作10年，曾就职于国内两家上市公司担任Java研发负责人及Android App研发负责人、某外企Android framework解决方案高级工程师、国内某知名电商平台担任Android主程，现任职于一家新能源公司担任Android研发经理。精通架构设计及主流技术框架；熟悉OC、Swift、JavaScript、H5、小程序及Linux等。热爱新技术，敢于尝试新技术的研究与实际应用">
+                                 从事软件研发工作10年，曾就职于国内两家上市公司担任Java研发负责人及Android App研发负责人、某外企Android framework解决方案高级工程师、国内某知名电商平台担任Android主程，现任职于一家新能源公司担任Android研发经理。精通架构设计及主流技术框架；熟悉OC、Swift、JavaScript、H5、小程序及Linux等。热爱新技术，敢于尝试新技术的研究与实际应用
+                                    </span>
+                                </a>
+
+                            </div>
+                            <div class="main-5-container-main-list1">
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img1.mukewang.com/577baef700019c4501400140-100-100.jpg">
+                                    <span class="titlee">ustbhuangyi</span>
+                                    <span class="kong"></span>
+                                    <span class="textt" title="北京科技大学毕业，计算机专业硕士。曾任职百度，现就职滴滴，滴滴 WebApp 前端架构组负责人，专家工程师；擅长前端自动化、工程化，前端架构方向。开源项目 better-scroll、cube-ui 作者，《Vue.js 权威指南》作者，乐于技术分享，追求极致。">
+                                        北京科技大学毕业，计算机专业硕士。曾任职百度，现就职滴滴，滴滴 WebApp 前端架构组负责人，专家工程师；擅长前端自动化、工程化，前端架构方向。开源项目 better-scroll、cube-ui 作者，《Vue.js 权威指南》作者，乐于技术分享，追求极致。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img4.mukewang.com/54584e2c00010a2c02200220-100-100.jpg">
+                                    <span class="titlee">7七月</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title="多年研发经验，毕业后一直任职于某大型互联网公司，担任研发经理。后开始自己的创业。精通Python、NodeJS、Javascript、PHP等，一直致力于Web技术的研究">
+                                      多年研发经验，毕业后一直任职于某大型互联网公司，担任研发经理。后开始自己的创业。精通Python、NodeJS、Javascript、PHP等，一直致力于Web技术的研究
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5347593e00010cfb01400140-100-100.jpg">
+                                    <span class="titlee">liuyubobobo</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title="创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。">
+                                      创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5b88f1f50001688401500150-100-100.jpg">
+                                    <span class="titlee">慕课官方号</span>
+                                    <span class="kong">页面重构设计</span>
+                                    <span class="textt" title="这位童鞋很懒，什么也没有留下～～！">
+                                   这位童鞋很懒，什么也没有留下～～！
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item" style="margin-right: 0">
+                                    <img src="//img4.mukewang.com/53216e780001060f01600160-100-100.jpg">
+                                    <span class="titlee">大漠</span>
+                                    <span class="kong">Web前端工程师</span>
+                                    <span class="textt" title="W3CPlus创始人，目前就职于手淘。对CSS3和Sass等前端脚本语言有深入的认识和丰富的实践经验。CSS3、Sass和Drupal中国布道者，2014年出版《图解CSS3：核心技术与案例实战》。">
+                                   W3CPlus创始人，目前就职于手淘。对CSS3和Sass等前端脚本语言有深入的认识和丰富的实践经验。CSS3、Sass和Drupal中国布道者，2014年出版《图解CSS3：核心技术与案例实战》。
+                                    </span>
+                                </a>
+
+                            </div>
+                            <div class="main-5-container-main-list1">
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img.mukewang.com/5abe468b0001664107390741-100-100.jpg">
+                                    <span class="titlee">DellLee</span>
+                                    <span class="kong">Web前端工程师</span>
+                                    <span class="textt" title="BAT资深前端工程师，负责数据平台技术研发。曾任去哪儿网高级前端工程师，主导去哪儿网内部前端监控系统设计，负责去哪儿网门票用户端的前端设计开发。曾任国内知名培训机构高级前端讲师，负责React，Angular，Vue，Hybrid，RN的课程讲授，具备丰富前端授课经验。对优雅编程及工程化有深度思考及见解，教会你写代码，同时帮助你把代码写的更漂亮！">
+                                       BAT资深前端工程师，负责数据平台技术研发。曾任去哪儿网高级前端工程师，主导去哪儿网内部前端监控系统设计，负责去哪儿网门票用户端的前端设计开发。曾任国内知名培训机构高级前端讲师，负责React，Angular，Vue，Hybrid，RN的课程讲授，具备丰富前端授课经验。对优雅编程及工程化有深度思考及见解，教会你写代码，同时帮助你把代码写的更漂亮！
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img4.mukewang.com/5b2a0c4d0001029d09600960-100-100.jpg">
+                                    <span class="titlee">风落几番</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title="蚂蚁金服测试专家，带领团队从零建立多个大型项目安全测试，针对Web安全测试搭建了基于开源工具的安全测试架构，独立开发基于WebDriver的自动化测试平台，著有《LoadRunner性能测试巧匠训练营》。">
+                                      蚂蚁金服测试专家，带领团队从零建立多个大型项目安全测试，针对Web安全测试搭建了基于开源工具的安全测试架构，独立开发基于WebDriver的自动化测试平台，著有《LoadRunner性能测试巧匠训练营》。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5b1e461a000140a007570649-100-100.jpg">
+                                    <span class="titlee">大漠风</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title="15年的开发经验，目前在一家创业公司担任技术总监，熟悉java、python、前端开发等，有丰富的架构设计、开发经验。喜欢clojure，爱好足球，最近在研究用python做基于机器学习的量化投资">15年的开发经验，目前在一家创业公司担任技术总监，熟悉java、python、前端开发等，有丰富的架构设计、开发经验。喜欢clojure，爱好足球，最近在研究用python做基于机器学习的量化投资">
+                                     <span class="lecturer-p" title="15年的开发经验，目前在一家创业公司担任技术总监，熟悉java、python、前端开发等，有丰富的架构设计、开发经验。喜欢clojure，爱好足球，最近在研究用python做基于机器学习的量化投资">15年的开发经验，目前在一家创业公司担任技术总监，熟悉java、python、前端开发等，有丰富的架构设计、开发经验。喜欢clojure，爱好足球，最近在研究用python做基于机器学习的量化投资</span>
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img2.mukewang.com/587dd3db0001488708521136-100-100.jpg">
+                                    <span class="titlee">河畔一角</span>
+                                    <span class="kong">页面重构设计</span>
+                                    <span class="textt" title="六年前端开发经验，曾任职于IBM、乐视等从事前端开发工作。热爱编程，乐于分享!">
+                                   六年前端开发经验，曾任职于IBM、乐视等从事前端开发工作。热爱编程，乐于分享!
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item" style="margin-right: 0">
+                                    <img src="//img.mukewang.com/584ff8bf0001609c01000100-100-100.jpg">
+                                    <span class="titlee">bennyhuo</span>
+                                    <span class="kong">移动开发工程师</span>
+                                    <span class="textt" title="北京邮电大学硕士毕业，就职于腾讯，先后负责腾讯地图Android SDK的开发和维护，期间支持了QQ、微信、滴滴、饿了么、大众点评等客户，后从事腾讯车联相关的应用开发，主攻 Android 开发。博客：http://www.println.net/Github：https://github.com/enbandari">
+                                 北京邮电大学硕士毕业，就职于腾讯，先后负责腾讯地图Android SDK的开发和维护，期间支持了QQ、微信、滴滴、饿了么、大众点评等客户，后从事腾讯车联相关的应用开发，主攻 Android 开发。
+                                        博客：http://www.println.net/Github：https://github.com/enbandari
+                                    </span>
+                                </a>
+
+                            </div>
+                            <div class="main-5-container-main-list1">
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img.mukewang.com/5afe3d350001596a02430243-100-100.jpg">
+                                    <span class="titlee">神思者l</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title=" 曾就职于IBM，中软国际等大型互联网公司，参与主持了Nebula云平台，Peony分布式前端渲染平台，Taims医疗云，Jobseeker人才库等大型系统的开发，多次担任教育部大学生互联网 创新创业大赛导师与评委。">
+                                        曾就职于IBM，中软国际等大型互联网公司，参与主持了Nebula云平台，Peony分布式前端渲染平台，Taims医疗云，Jobseeker人才库等大型系统的开发，多次担任教育部大学生互联网 创新创业大赛导师与评委。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5b614d33000131ac03000331-100-100.jpg">
+                                    <span class="titlee">阿神_</span>
+                                    <span class="kong">JAVA开发工程师</span>
+                                    <span class="textt" title="10余年JAVA架构设计与研发经验。目前就职于国内知名O2O互联网公司，从事基础架构设计研发工作。擅长系统架构，应用架构和基础组件架构设计，对高并发、高可用、分布式系统设计有着丰富的经验和实战，精通互联网Java主流技术。">
+                                      10余年JAVA架构设计与研发经验。目前就职于国内知名O2O互联网公司，从事基础架构设计研发工作。擅长系统架构，应用架构和基础组件架构设计，对高并发、高可用、分布式系统设计有着丰富的经验和实战，精通互联网Java主流技术。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5b7b59070001fdc909600960-100-100.jpg">
+                                    <span class="titlee">Wotchin</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title="先后任职于某海外业务移动互联网公司，国内某一线IT大厂研发能力中心，从事AI全栈研发，数据库内核、数据仓库、数据分析等数据科学方面的研发工作">
+                                    先后任职于某海外业务移动互联网公司，国内某一线IT大厂研发能力中心，从事AI全栈研发，数据库内核、数据仓库、数据分析等数据科学方面的研发工作
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5b0e022600017b5c06000600-100-100.jpg">
+                                    <span class="titlee">浩然老师</span>
+                                    <span class="kong"></span>
+                                    <span class="textt" title="艺术与商业结合的矛盾体设计师，现为自由设计师，曾服务捷越联合、东站西子国际、信安亚双十一视觉等互联网以及品牌设计公司。">
+                                   艺术与商业结合的矛盾体设计师，现为自由设计师，曾服务捷越联合、东站西子国际、信安亚双十一视觉等互联网以及品牌设计公司。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item" style="margin-right: 0">
+                                    <img src="//img3.mukewang.com/5aa0d97c00014aae02000200-100-100.jpg">
+                                    <span class="titlee">雷宇_</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title="从事软件研发工作10年，曾就职于国内两家上市公司担任Java研发负责人及Android App研发负责人、某外企Android framework解决方案高级工程师、国内某知名电商平台担任Android主程，现任职于一家新能源公司担任Android研发经理。精通架构设计及主流技术框架；熟悉OC、Swift、JavaScript、H5、小程序及Linux等。热爱新技术，敢于尝试新技术的研究与实际应用">
+                                 从事软件研发工作10年，曾就职于国内两家上市公司担任Java研发负责人及Android App研发负责人、某外企Android framework解决方案高级工程师、国内某知名电商平台担任Android主程，现任职于一家新能源公司担任Android研发经理。精通架构设计及主流技术框架；熟悉OC、Swift、JavaScript、H5、小程序及Linux等。热爱新技术，敢于尝试新技术的研究与实际应用
+                                    </span>
+                                </a>
+
+                            </div>
+                            <div class="main-5-container-main-list1">
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img1.mukewang.com/577baef700019c4501400140-100-100.jpg">
+                                    <span class="titlee">ustbhuangyi</span>
+                                    <span class="kong"></span>
+                                    <span class="textt" title="北京科技大学毕业，计算机专业硕士。曾任职百度，现就职滴滴，滴滴 WebApp 前端架构组负责人，专家工程师；擅长前端自动化、工程化，前端架构方向。开源项目 better-scroll、cube-ui 作者，《Vue.js 权威指南》作者，乐于技术分享，追求极致。">
+                                        北京科技大学毕业，计算机专业硕士。曾任职百度，现就职滴滴，滴滴 WebApp 前端架构组负责人，专家工程师；擅长前端自动化、工程化，前端架构方向。开源项目 better-scroll、cube-ui 作者，《Vue.js 权威指南》作者，乐于技术分享，追求极致。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img4.mukewang.com/54584e2c00010a2c02200220-100-100.jpg">
+                                    <span class="titlee">7七月</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title="多年研发经验，毕业后一直任职于某大型互联网公司，担任研发经理。后开始自己的创业。精通Python、NodeJS、Javascript、PHP等，一直致力于Web技术的研究">
+                                      多年研发经验，毕业后一直任职于某大型互联网公司，担任研发经理。后开始自己的创业。精通Python、NodeJS、Javascript、PHP等，一直致力于Web技术的研究
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5347593e00010cfb01400140-100-100.jpg">
+                                    <span class="titlee">liuyubobobo</span>
+                                    <span class="kong">全栈工程师</span>
+                                    <span class="textt" title="创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。">
+                                      创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item">
+                                    <img src="//img3.mukewang.com/5b88f1f50001688401500150-100-100.jpg">
+                                    <span class="titlee">慕课官方号</span>
+                                    <span class="kong">页面重构设计</span>
+                                    <span class="textt" title="这位童鞋很懒，什么也没有留下～～！">
+                                   这位童鞋很懒，什么也没有留下～～！
+                                    </span>
+                                </a>
+
+                                <a href="#" class="main-5-container-main-list1-item" style="margin-right: 0">
+                                    <img src="//img4.mukewang.com/53216e780001060f01600160-100-100.jpg">
+                                    <span class="titlee">大漠</span>
+                                    <span class="kong">Web前端工程师</span>
+                                    <span class="textt" title="W3CPlus创始人，目前就职于手淘。对CSS3和Sass等前端脚本语言有深入的认识和丰富的实践经验。CSS3、Sass和Drupal中国布道者，2014年出版《图解CSS3：核心技术与案例实战》。">
+                                   W3CPlus创始人，目前就职于手淘。对CSS3和Sass等前端脚本语言有深入的认识和丰富的实践经验。CSS3、Sass和Drupal中国布道者，2014年出版《图解CSS3：核心技术与案例实战》。
+                                    </span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="xia" id="xia">
+                            <span index="1" class="activee"></span>
+                            <span index="2" class=""></span>
+                            <span index="3" class=""></span>
+                        </div>
+                    </div>
+                    <div class="zuo" id="zuo"><i class="glyphicon glyphicon-menu-left"></i></div>
+                    <div class="you" id="you"><i class="glyphicon glyphicon-menu-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <div id="main-6">
+            <div class="main-6-container">
+                <img src="images/全明星.png">
+                <div class="star-list">
+                    <dl class="star-list-top">
+                        <dd>
+                            <div>
+                                <img src="images/star1.jpg">
+                                <span class="purple"></span>
+                            </div>
+                            <p class="ppp1">悬崖上的金魚姬</p>
+                            <p class="ppp2">风骚课程学霸</p>
+                        </dd>
+                        <dd>
+                            <div>
+                                <img src="images/star2.jpg">
+                                <span class="green"></span>
+                            </div>
+                            <p class="ppp1">onemoo</p>
+                            <p class="ppp2">神秘解疑大神</p>
+                        </dd>
+                        <dd>
+                            <div>
+                                <img src="images/star3.jpg">
+                                <span class="blue"></span>
+                            </div>
+                            <p class="ppp1">拉丁的传说</p>
+                            <p class="ppp2">智慧文章王者</p>
+                        </dd>
+                        <dd>
+                            <div>
+                                <img src="images/star4.png">
+                                <span class="yellow"></span>
+                            </div>
+                            <p class="ppp1">精慕门9346528</p>
+                            <p class="ppp2">智慧文章王者</p>
+                        </dd>
+                    </dl >
+                    <dl class="star-list-bottom">
+                        <dd class="item-p">
+                            <img src="images/star5.jpg">
+                            <div class="hidden1" style="display: none; background: #653ddd;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="p">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-g">
+                            <img src="images/star6.jpg">
+                            <div class="hidden1" style="display: none; background: #00b46d;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="g">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-b">
+                            <img src="images/star7.jpg">
+                            <div class="hidden1" style="display: none; background: #008cc8;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="b">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-p">
+                            <img src="images/star5.jpg">
+                            <div class="hidden1" style="display: none; background: #653ddd;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="p">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-g">
+                            <img src="images/star6.jpg">
+                            <div class="hidden1" style="display: none; background: #00b46d;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="g">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-b">
+                            <img src="images/star7.jpg">
+                            <div class="hidden1" style="display: none; background: #008cc8;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="b">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-p">
+                            <img src="images/star5.jpg">
+                            <div class="hidden1" style="display: none; background: #653ddd;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="p">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-g">
+                            <img src="images/star6.jpg">
+                            <div class="hidden1" style="display: none; background: #00b46d;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="g">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-b">
+                            <img src="images/star7.jpg">
+                            <div class="hidden1" style="display: none; background: #008cc8;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="b">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-p">
+                            <img src="images/star5.jpg">
+                            <div class="hidden1" style="display: none; background: #653ddd;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="p">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-g">
+                            <img src="images/star6.jpg">
+                            <div class="hidden1" style="display: none; background: #00b46d;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="g">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-b" style="margin-left: 40px!important;">
+                            <img src="images/star7.jpg">
+                            <div class="hidden1" style="display: none; background: #008cc8;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="b">◆</span>
+                            </div>
+                        </dd script>
+                        <dd class="item-p">
+                            <img src="images/star5.jpg">
+                            <div class="hidden1" style="display: none; background: #653ddd;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="p">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-g">
+                            <img src="images/star6.jpg">
+                            <div class="hidden1" style="display: none; background: #00b46d;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="g">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-b">
+                            <img src="images/star7.jpg">
+                            <div class="hidden1" style="display: none; background: #008cc8;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="b">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-p">
+                            <img src="images/star5.jpg">
+                            <div class="hidden1" style="display: none; background: #653ddd;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="p">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-g">
+                            <img src="images/star6.jpg">
+                            <div class="hidden1" style="display: none; background: #00b46d;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="g">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-b">
+                            <img src="images/star7.jpg">
+                            <div class="hidden1" style="display: none; background: #008cc8;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="b">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-p">
+                            <img src="images/star5.jpg">
+                            <div class="hidden1" style="display: none; background: #653ddd;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="p">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-g">
+                            <img src="images/star6.jpg">
+                            <div class="hidden1" style="display: none; background: #00b46d;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="g">◆</span>
+                            </div>
+                        </dd>
+                        <dd class="item-b">
+                            <img src="images/star7.jpg">
+                            <div class="hidden1" style="display: none; background: #008cc8;">
+                                <p style="font-size: 12px;line-height: 16px;font-weight: 400;margin: 0">="风骚课程学霸"=</p>
+                                <p style="font-size: 14px;line-height: 24px;margin: 0;overflow: hidden;text-overflow: ellipsis;white-space: normal">灰灰520</p>
+                                <p style="font-size: 12px;line-height: 16px;;margin-top: 8px;font-weight: 400;">一周获得 66积分</p>
+                                <span class="b">◆</span>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-container">
+            <div class="footer-icon">
+                <div class="footer-icon1">
+                    <a href="javaScript:">
+                        <i class="icon1-hidden"></i>
+                    </a>
+                    <p>官方公众号</p>
+                </div>
+                <div class="footer-icon2">
+                    <a href="javaScript:"></a>
+                    <p>官方微博</p>
+                </div>
+            </div>
+        <div class="fonter-link">
+            <a href="javaScript:">企业合作</a>
+            <a href="javaScript:">人才招聘</a>
+            <a href="javaScript:">讲师招聘</a>
+            <a href="javaScript:">帮助中心</a>
+            <a href="javaScript:">意见反馈</a>
+            <a href="javaScript:">慕课大学</a>
+            <a href="javaScript:">友情链接</a>
+            <a href="javaScript:">联系我们</a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2018 imooc.com  京ICP备 12003892号-11</p>
+        </div>
+        </div>
+    </div>
+    <div id="sidebar">
+        <a href="JavaScript:">
+            <i class="glyphicon glyphicon-align-left"></i>
+            <span>意见反馈</span>
+        </a>
+        <a href="JavaScript:">
+            <i class="glyphicon glyphicon-search"></i>
+            <span>帮助中心</span>
+        </a>
+        <a href="JavaScript:">
+            <i class="glyphicon glyphicon-phone"></i>
+            <span>APP下载</span>
+            <div class="sidebar-app"></div>
+        </a>
+        <a href="JavaScript:">
+            <i class="glyphicon glyphicon-qrcode"></i>
+            <span>官方微信</span>
+            <div class="sidebar-weixin"></div>
+        </a>
+        <a href="JavaScript:" id="fanhuitop" style="display: none">
+            <i class="glyphicon glyphicon-menu-up"></i>
+            <span>返回顶部</span>
+        </a>
+    </div>
+</div>
+<script>
+    document.onreadystatechange=function () {
+        if(document.readyState=="complete"){
+            $(".loading").fadeOut();
+        }
+    }
+
+</script>
+</body>
+</html>
